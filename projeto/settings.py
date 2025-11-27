@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'receitas', #Configurei este APP receitas, pois nele está a pasta templates e o home.html rodando
 ]
 
 MIDDLEWARE = [
