@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-{% include "parciais/head.html" %}
-{% include "parciais/cabecalho.html" %}
+{% extends "base/basePagina.html" %}
 
-<body>
-    {% include "parciais/buscador.html" %}
-    <main class="principal-conteudo-container">
-        {% include "parciais/card.html" %}
-        {% include "parciais/card.html" %}
-        {% include "parciais/card.html" %} 
-    </main>
-    {% include "parciais/rodape.html" %}
-</body>
+{% block conteudo %}
+<main class="principal-conteudo-container">
+    {% for receita in receita%} {% comment %} Inclui 10 cards {% endcomment %}
+    {% include "parciais/card.html" %} 
+    {% endfor%}
+    {% comment %} {% include "parciais/rodape.html" %} {% endcomment %}
+</main>
 
-</html>
+{% endblock conteudo %}
+
