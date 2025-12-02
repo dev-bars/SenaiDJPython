@@ -1,8 +1,8 @@
 #urls.py (receitas) responsável por gerenciar o caminho das paginas
-from django .urls import path
+from django.urls import path
 from . import views
 
 urlpatterns = [
     path("", views.home),
-    path("receita/", views.receita)
+    path("receita/", views.receita),
 ]
