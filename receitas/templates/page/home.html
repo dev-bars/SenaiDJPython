@@ -2,7 +2,7 @@
 
 {% block conteudo %}
 <main class="principal-conteudo-container">
-    {% for receita in receita%} {% comment %} Inclui 10 cards {% endcomment %}
+    {% for receita in receitas%} {% comment %} Inclui cards {% endcomment %}
     {% include "parciais/card.html" %} 
     {% endfor%}
     {% comment %} {% include "parciais/rodape.html" %} {% endcomment %}
