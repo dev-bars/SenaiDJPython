@@ -18,9 +18,7 @@
         </span>
         <div class="receita-descrição">
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam minima at hic consequuntur nobis
-                nisi eum nostrum temporibus quisquam enim. Perferendis, enim molestias dolores cupiditate
-                accusamus alias atque eum fuga!
+                {{receita.passos_preparo}}
             </p>
         </div>
         <div class="receita-meta">
@@ -36,7 +34,7 @@
             </div>
         </div>
         <footer class="receitas-footer">
-            <a href="receita/" class="btn btn-primary">
+            <a href="{% url "receitas-receita" %}" class="btn btn-primary">
                 <i class="fas fa-eye"></i>
                 Ver Receita
             </a>

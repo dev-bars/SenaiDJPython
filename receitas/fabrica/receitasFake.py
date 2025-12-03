@@ -15,7 +15,7 @@ def gen_fake_receita():
         'unidade_tempo': 'minutos',
         'porcoes': falso.random_number(digits=1, fix_len=True),
         'unidade_porcoes': "Porções",
-        'passos_preparo': falso.text(3000),
+        'passos_preparo': falso.text(300),
         'Data_publicacao': falso.date_between(start_date='-1y', end_date='today'),
         'categoria': falso.word(ext_word_list={'Entrada', 'Prato principal', 'Sobremesa', 'Bebida', 'Lanche'}),
         'autor':{
